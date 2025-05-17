@@ -1,0 +1,29 @@
+# Ignore user data and sensitive content
+data/
+*.json
+*.yaml
+*.yml
+*.env
+*.env.*
+*.lock
+
+# Ignore backups, extras, and generated media
+SillyTavern-backups/
+SillyTavern-extras/
+text-completion/
+image-generation/
+voice-generation/
+xtts/
+
+# Ignore binaries and tools
+bin/*
+!bin/functions/
+!bin/functions/**
+
+# Ignore logs, text outputs, venvs, temp scripts
+*.txt
+*.logs
+/bin/functions/Toolbox/Troubleshooting/telemetry/venv
+bin/functions/Toolbox/Troubleshooting/detect_vpn - OLD.bat
+bin/functions/Toolbox/Troubleshooting/home_port_check - OLD.bat
+bin/functions/Toolbox/Troubleshooting/gpu_info - CUDA DETECT IN DEV.bat
